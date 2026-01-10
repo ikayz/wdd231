@@ -27,6 +27,7 @@ header img {
   display: block;
   width: 100%;
   height: auto;
+  padding-bottom: 5px;
 }
 
 header span {
@@ -38,11 +39,15 @@ header span {
 .hamburger {
   background: none;
   border: none;
+  font-size: 2rem;
   color: var(--twilight-indigo);
   cursor: pointer;
 }
 
-.hamburger::after {
+.hamburger::before {
   content: '\2630';
-  font-size: 2rem;
+}
+
+.hamburger.show::before {
+  content: '\00D7';
 }
