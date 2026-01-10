@@ -1,0 +1,48 @@
+/* SITE WIDE */
+:root {
+  --twilight-indigo: #1d2f6fff;
+  --watermelon: #ee4266ff;
+  --hunter-green: #3e5641ff;
+  --muted-teal: #83bca9ff;
+  --headings-font: 'Montserrat', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+* {
+  font-family: var(--body-font);
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: var(--twilight-indigo);
+}
+
+/* HAMBURGER NAVIGATION */
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--twilight-indigo);
+  cursor: pointer;
+}
+
+.hamburger::after {
+  content: '\2630';
+  font-size: 2rem;
+}

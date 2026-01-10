@@ -1,0 +1,23 @@
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+}
+
+.hamburger::before {
+  content: '\2630';
+}
+.hamburger.show::before {
+  content: '\00D7';
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  display: flex;
+}
