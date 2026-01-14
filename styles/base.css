@@ -70,7 +70,7 @@ header span {
 .navigation a {
   display: block;
   padding: 0.8rem 10px;
-  color: var(--watermelon);
+  color: var(--twilight-indigo);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
@@ -79,8 +79,13 @@ header span {
   background-color: var(--twilight-indigo);
 }
 
+.navigation li.current a {
+  color: #fff;
+}
+
 .navigation a:hover {
   background-color: var(--twilight-indigo);
+  color: #fff;
 }
 
 /* MAIN */
@@ -215,8 +220,6 @@ section .section-heading.full {
   background: linear-gradient(180deg, #e9e6d9 0%, #f7f4ea 100%);
   color: #1d1d1d;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
-}
-.course-btn {
   width: 100%;
   text-align: center;
 }
