@@ -1,0 +1,25 @@
+/* Mobile-specific styles */
+
+@media (max-width: 800px) {
+  .course-filters {
+    gap: 8px;
+  }
+
+  .courses-list {
+    grid-template-columns: 1fr;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-filters .filter {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .course-btn {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+}

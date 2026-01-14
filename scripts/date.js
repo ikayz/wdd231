@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (setDate) {
     setDate.textContent = new Date().getFullYear();
   }
-  const lastModified = document.getElementById('last-modified');
+  const lastModified = document.getElementById('lastModified');
   if (lastModified) {
     lastModified.textContent = `Last Modified: ${document.lastModified}`;
   }

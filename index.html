@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/small.css" media="(max-width: 800px)">
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
@@ -36,14 +37,37 @@
   </nav>
   <main>
     <h1>Home</h1>
-    <section>
-      <h2></h2>
-    </section>
-    <section>
-      <h2></h2>
-    </section>
-    <section>
-      <h2></h2>
+
+    <div class="content-grid">
+      <section class="about">
+        <div class="section-heading">About Me</div>
+        <div class="section-body">
+          <p>Hi, I'm Isaac Miti — a software development student and self-taught Android app creator based in Lusaka. I
+            specialize in building digital media, visual guides, and mentoring resources that turn technical learning
+            into community empowerment.</p>
+        </div>
+      </section>
+
+      <aside class="photo">
+        <div class="section-heading">Student Photo</div>
+        <div class="section-body photo-body" aria-hidden="true">
+          <img src="images/isaac_miti.jpg" width="240" a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="courses">
+      <div class="section-heading full">Web Certificate Courses</div>
+
+      <div class="course-filters" role="tablist" aria-label="Course filters">
+        <button id="allBtn" class="filter">All</button>
+        <button id="cseBtn" class="filter">CSE</button>
+        <button id="wddBtn" class="filter">WDD</button>
+      </div>
+
+      <div id="coursesList" class="courses-list" aria-live="polite"></div>
+
+      <p class="credits">The total credits for course listed above is <span id="creditsValue">0</span></p>
     </section>
   </main>
   <footer>
@@ -62,7 +86,7 @@
       </a>
     </div>
     <p>&copy; <span id="current-year"></span> | Isaac Miti | Lusaka, Zambia</p>
-    <p id="last-modified">Last modified</p>
+    <p id="lastModified">Last modified</p>
   </footer>
 </body>
 
