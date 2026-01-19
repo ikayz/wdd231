@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Zamtel",
+    "address": "Corner of Church and Chilubi Road, Lusaka",
+    "phone": "+260 211 200200",
+    "website": "https://www.zamtel.co.zm",
+    "image": "zamtel.png",
+    "membershipLevel": 3,
+    "description": "Zambia's leading telecommunications service provider offering voice and data services."
+  },
+  {
+    "name": "Shoprite Zambia",
+    "address": "Manda Hill Shopping Centre, Great East Road, Lusaka",
+    "phone": "+260 211 255555",
+    "website": "https://www.shoprite.co.zm",
+    "image": "shoprite-zambia.png",
+    "membershipLevel": 2,
+    "description": "The leading retailer in Africa, providing affordable food and household items."
+  },
+  {
+    "name": "Lusaka Times",
+    "address": "Plot 123, Cairo Road, Lusaka",
+    "phone": "+260 977 123456",
+    "website": "https://www.lusakatimes.com",
+    "image": "lusaka-times.png",
+    "membershipLevel": 1,
+    "description": "An online news publication delivering the latest news and analysis from Zambia."
+  },
+  {
+    "name": "Trade Kings",
+    "address": "Nampundwe Road, Light Industrial Area, Lusaka",
+    "phone": "+260 211 286117",
+    "website": "https://www.tradekings.co.zm",
+    "image": "trade-kings.png",
+    "membershipLevel": 3,
+    "description": "A leading manufacturer of quality consumer goods in Zambia and the region."
+  },
+  {
+    "name": "Zambia Airways",
+    "address": "Kenneth Kaunda International Airport, Lusaka",
+    "phone": "+260 211 123789",
+    "website": "https://www.zambia-airways.com",
+    "image": "zambia-airways.png",
+    "membershipLevel": 2,
+    "description": "The national carrier of Zambia, connecting Lusaka to the world."
+  },
+  {
+    "name": "Java Foods",
+    "address": "1234 Katanga Road, Industrial Area, Lusaka",
+    "phone": "+260 211 244888",
+    "website": "https://www.java-foods.com",
+    "image": "java-foods.png",
+    "membershipLevel": 1,
+    "description": "A food processing company committed to providing affordable nutrition."
+  },
+  {
+    "name": "Proflight Zambia",
+    "address": "Kenneth Kaunda International Airport, Lusaka",
+    "phone": "+260 211 252452",
+    "website": "https://proflight-zambia.com",
+    "image": "proflight-zambia.png",
+    "membershipLevel": 2,
+    "description": "Zambia's leading scheduled airline, offering domestic and regional flights."
+  }
+]

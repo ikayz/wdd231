@@ -23,6 +23,7 @@
 
   .navigation a {
     border: none;
+    color: var(--twilight-indigo);
   }
 
   header {
@@ -50,14 +51,20 @@
 
   .footer-section:first-child {
     text-align: left;
+    margin-left: 1rem;
   }
 
   .footer-section:last-child {
     text-align: right;
+    margin-right: 1rem;
   }
 
   .hero img {
     height: 400px;
     object-fit: cover;
+  }
+
+  .info-grid {
+    grid-template-columns: 2fr 1fr 1fr;
   }
 }

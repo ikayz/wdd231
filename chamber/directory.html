@@ -25,7 +25,7 @@
   <link rel="icon" href="favicon.ico">
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/course.js" defer></script>
+  <script src="scripts/members.js" defer></script>
   <script src="scripts/scripts.js" defer></script>
 </head>
 
@@ -56,36 +56,33 @@
   <main>
     <h1>Home</h1>
 
-    <div class="content-grid">
-      <section class="about">
-        <h2 class="section-heading">About Me</h2>
-        <div class="section-body">
-          <p>Hi, I'm Isaac Miti — a software development student and self-taught Android app creator based in Lusaka. I
-            specialize in building digital media, visual guides, and mentoring resources that turn technical learning
-            into community empowerment.</p>
+    <div class="info-grid">
+      <section class="events">
+        <h2 class="section-heading">Events</h2>
+        <div id="events-body" class="section-body">
+          <p>No upcoming events.</p>
         </div>
       </section>
-
-      <section class="photo" role="complementary">
-        <h2 class="section-heading">Student Photo</h2>
-        <div class="section-body photo-body" aria-hidden="true">
-          <img src="images/isaac_miti.jpg" width="240" height="240" alt="Isaac Miti" loading="lazy">
+      <section class="current-weather">
+        <h2 class="section-heading">Current Weather</h2>
+        <div id="current-weather-body" class="section-body">
+          <p>Current weather data will be displayed here.</p>
+        </div>
+      </section>
+      <section class="weather-forecast">
+        <h2 class="section-heading">Weather Forecast</h2>
+        <div id="weather-forecast-body" class="section-body">
+          <p>Weather forecast data will be displayed here.</p>
         </div>
       </section>
     </div>
 
-    <section class="courses">
-      <h2 class="section-heading full">Web Certificate Courses</h2>
-
-      <div class="course-filters" role="tablist" aria-label="Course filters">
-        <button id="allBtn" class="filter">All</button>
-        <button id="cseBtn" class="filter">CSE</button>
-        <button id="wddBtn" class="filter">WDD</button>
+    <section class="members-section">
+      <div class="view-toggle">
+        <button id="grid-view" class="active">Grid</button>
+        <button id="list-view">List</button>
       </div>
-
-      <div id="coursesList" class="courses-list" aria-live="polite"></div>
-
-      <p class="credits">The total credits for course listed above is <span id="creditsValue">0</span></p>
+      <div id="members-container" class="members-container"></div>
     </section>
   </main>
   <footer>
