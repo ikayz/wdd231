@@ -13,10 +13,108 @@
     content="Lusaka Chamber directory: local businesses, services, and resources for the Lusaka community.">
   <meta property="og:image" content="https://ikayz.github.io/wdd231/images/isaac_miti.jpg">
   <meta property="og:url" content="https://ikayz.github.io/wdd231/chamber/directory.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+  <script src="scripts/scripts.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="site logo" width="64" height="64">
+      <span>Lusaka Chamber of Commerce</span>
+    </div>
+    <div class="menu">
+      <button id="ham-button" class="hamburger" aria-label="navigation"></button>
+      <nav id="nav-bar" class="navigation">
+        <ul>
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <div class="hero">
+    <img src="images/hero.jpg" alt="Chamber Hero Image">
+    <a href="#" class="cta-btn">Join Chamber</a>
+  </div>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="content-grid">
+      <section class="about">
+        <h2 class="section-heading">About Me</h2>
+        <div class="section-body">
+          <p>Hi, I'm Isaac Miti — a software development student and self-taught Android app creator based in Lusaka. I
+            specialize in building digital media, visual guides, and mentoring resources that turn technical learning
+            into community empowerment.</p>
+        </div>
+      </section>
+
+      <section class="photo" role="complementary">
+        <h2 class="section-heading">Student Photo</h2>
+        <div class="section-body photo-body" aria-hidden="true">
+          <img src="images/isaac_miti.jpg" width="240" height="240" alt="Isaac Miti" loading="lazy">
+        </div>
+      </section>
+    </div>
+
+    <section class="courses">
+      <h2 class="section-heading full">Web Certificate Courses</h2>
+
+      <div class="course-filters" role="tablist" aria-label="Course filters">
+        <button id="allBtn" class="filter">All</button>
+        <button id="cseBtn" class="filter">CSE</button>
+        <button id="wddBtn" class="filter">WDD</button>
+      </div>
+
+      <div id="coursesList" class="courses-list" aria-live="polite"></div>
+
+      <p class="credits">The total credits for course listed above is <span id="creditsValue">0</span></p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <p><strong>Lusaka Chamber of Commerce</strong></p>
+      <p>123 Chamber Avenue</p>
+      <p>Lusaka, Zambia</p>
+    </div>
+    <div class="footer-section social">
+      <a href="http://github.com/ikayz" target="_blank">
+        <img src="images/github.svg" alt="GitHub" width="16" height="16">
+      </a>
+      <a href="https://www.linkedin.com/in/isaac-miti/" target="_blank">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+      </a>
+      <a href="https://www.facebook.com/isaac.ikayz/" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+      </a>
+      <a href="https://x.com/ikayz360" target="_blank">
+        <img src="images/twitter-x.svg" alt="X" width="16" height="16">
+      </a>
+    </div>
+    <div class="footer-section">
+      <p>WDD 231 Class Project</p>
+      <p>Isaac Miti</p>
+      <p>&copy; <span id="current-year"></span> Lusaka Chamber of Commerce</p>
+      <p id="lastModified">Last Modification</p>
+    </div>
+  </footer>
 </body>
 
 </html>

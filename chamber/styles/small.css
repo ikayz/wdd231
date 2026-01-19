@@ -1,0 +1,14 @@
+/* Mobile-specific styles */
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block; /* show hamburger on mobile */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: none; /* hide nav by default */
+  }
+}

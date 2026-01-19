@@ -16,15 +16,21 @@
 /* HEADER */
 header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   border-bottom: solid 1px #ddd;
+  position: relative;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 header img {
-  width: 24px;
+  width: 48px;
   height: auto;
   margin-right: 10px;
 }
@@ -32,7 +38,6 @@ header img {
 header span {
   font-size: 1.2rem;
   color: var(--twilight-indigo);
-  flex-grow: 1;
 }
 
 /* HAMBURGER */
@@ -55,7 +60,12 @@ header span {
 /* NAVIGATION */
 .navigation {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
+  background-color: var(--watermelon);
+  z-index: 10;
 }
 
 .navigation.show {
@@ -73,7 +83,6 @@ header span {
   padding: 0.8rem 10px;
   color: var(--twilight-indigo);
   text-decoration: none;
-  border-bottom: solid 1px #ddd;
 }
 
 .navigation li.current {
@@ -99,6 +108,35 @@ main {
   padding: 0 10px;
 }
 
+/* HERO */
+.hero {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cta-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--watermelon);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.cta-btn:hover {
+  background-color: var(--twilight-indigo);
+}
+
 /* FOOTER */
 footer {
   background-color: #eee;
@@ -106,10 +144,16 @@ footer {
   text-align: center;
 }
 
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
 .social {
   display: flex;
   justify-content: center;
   column-gap: 8px;
+  margin: 1rem 0;
 }
 
 .social a {
@@ -130,46 +174,6 @@ footer {
 
 .social a:hover {
   background-color: var(--muted-teal);
-}
-
-/* Course filters and list */
-.course-filters {
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
-  padding: 0.6rem 10px;
-  margin: 1rem 0;
-}
-
-.course-filters .filter {
-  flex: 1 1 0;
-  padding: 0.8rem 1rem;
-  background: var(--watermelon);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
-  font-family: var(--headings-font);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.course-filters .filter:focus,
-.course-filters .filter:hover {
-  transform: translateY(-2px);
-}
-
-.courses-list {
-  padding: 0 10px 1rem 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-
-.courses-list .course-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
 }
 
 /* Two-column layout for about + photo */
@@ -198,55 +202,4 @@ section .section-heading.full {
   background: #e9e9e9;
   padding: 1rem;
   min-height: 180px;
-}
-
-.photo .section-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-}
-
-.course-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 1rem;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  font-family: var(--headings-font);
-  font-size: 1rem;
-  background: linear-gradient(180deg, #e9e6d9 0%, #f7f4ea 100%);
-  color: #1d1d1d;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
-  width: 100%;
-  text-align: center;
-}
-
-.course-btn:not(.completed) {
-  background: linear-gradient(
-    180deg,
-    rgba(238, 66, 102, 0.95) 0%,
-    var(--watermelon) 100%
-  );
-  color: #fff;
-}
-
-.course-btn:hover {
-  transform: translateY(-2px);
-}
-
-.course-check {
-  font-weight: 700;
-  color: var(--twilight-indigo);
-}
-
-.course-label {
-  display: inline-block;
-}
-
-.credits {
-  text-align: center;
 }

@@ -1,0 +1,63 @@
+@media only screen and (min-width: 38rem) {
+  header,
+  main,
+  nav,
+  footer {
+    margin: 0 auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .branding {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: 1;
+  }
+
+  .footer-section:first-child {
+    text-align: left;
+  }
+
+  .footer-section:last-child {
+    text-align: right;
+  }
+
+  .hero img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
