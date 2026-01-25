@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lusaka Chamber Directory | Isaac Miti</title>
+  <title>Lusaka Chamber of Commerce | Home</title>
   <meta name="author" content="Isaac Miti">
-  <meta name="description"
-    content="Lusaka Chamber directory: local businesses, services, and resources for the Lusaka community.">
-  <meta property="og:title" content="Lusaka Chamber Directory | Isaac Miti">
+  <meta name="description" content="Lusaka Chamber of Commerce home page: connecting local businesses and community.">
+  <meta property="og:title" content="Lusaka Chamber of Commerce | Home">
   <meta property="og:description"
-    content="Lusaka Chamber directory: local businesses, services, and resources for the Lusaka community.">
+    content="Lusaka Chamber of Commerce home page: connecting local businesses and community.">
   <meta property="og:image" content="https://ikayz.github.io/wdd231/images/isaac_miti.jpg">
-  <meta property="og:url" content="https://ikayz.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://ikayz.github.io/wdd231/chamber/index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -25,7 +24,7 @@
   <link rel="icon" href="favicon.ico">
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/members.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
   <script src="scripts/scripts.js" defer></script>
   <script src="scripts/weather.js" defer></script>
 </head>
@@ -40,8 +39,8 @@
       <button id="ham-button" class="hamburger" aria-label="navigation"></button>
       <nav id="nav-bar" class="navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="current"><a href="directory.html">Directory</a></li>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="discover.html">Discover</a></li>
         </ul>
@@ -55,7 +54,7 @@
   </div>
 
   <main>
-    <h1>Member Directory</h1>
+    <h1>Lusaka Chamber of Commerce</h1>
 
     <div class="info-grid">
       <section class="events">
@@ -78,12 +77,9 @@
       </section>
     </div>
 
-    <section class="members-section">
-      <div class="view-toggle">
-        <button id="grid-view" class="active">Grid</button>
-        <button id="list-view">List</button>
-      </div>
-      <div id="members-container" class="members-container"></div>
+    <section class="spotlights">
+      <h2 class="section-heading">Member Spotlights</h2>
+      <div id="spotlight-container" class="members-container"></div>
     </section>
   </main>
   <footer>
