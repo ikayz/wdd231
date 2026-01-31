@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lusaka Chamber of Commerce | Join</title>
+  <meta name="author" content="Isaac Miti">
+  <meta name="description"
+    content="Join the Lusaka Chamber of Commerce to connect with local businesses and grow your network.">
+  <meta property="og:title" content="Lusaka Chamber of Commerce | Join">
+  <meta property="og:description"
+    content="Join the Lusaka Chamber of Commerce to connect with local businesses and grow your network.">
+  <meta property="og:image" content="https://ikayz.github.io/wdd231/images/isaac_miti.jpg">
+  <meta property="og:url" content="https://ikayz.github.io/wdd231/chamber/join.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/scripts.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="site logo" width="64" height="64">
+      <span>Lusaka Chamber of Commerce</span>
+    </div>
+    <div class="menu">
+      <button id="ham-button" class="hamburger" aria-label="navigation"></button>
+      <nav id="nav-bar" class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="current"><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+    <div class="join-container">
+      <section class="form-area">
+        <form method="get" action="thankyou.html" class="join-form">
+          <label title="First Name">First Name
+            <input type="text" name="firstName" required autocomplete="given-name">
+          </label>
+          <label title="Last Name">Last Name
+            <input type="text" name="lastName" required autocomplete="family-name">
+          </label>
+          <label title="Organizational Title">Organizational Title
+            <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[a-zA-Z\s-]{7,}"
+              title="Must be at least 7 characters (alpha, hyphens, spaces)">
+          </label>
+          <label title="Email">Email
+            <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
+          </label>
+          <label title="Mobile Phone">Mobile Phone
+            <input type="tel" name="phone" required autocomplete="tel">
+          </label>
+          <label title="Business/Organization Name">Business/Organization Name
+            <input type="text" name="organization" required autocomplete="organization">
+          </label>
+          <label title="Membership Level">Membership Level
+            <select name="membershipLevel" required>
+              <option value="" disabled selected>Select a Membership Level</option>
+              <option value="np">NP Membership (No Fee)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+          <label title="Business/Organization Description">Business/Organization Description
+            <textarea name="description"></textarea>
+          </label>
+
+          <!-- Timestamp Field -->
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Join the Chamber">
+        </form>
+      </section>
+
+      <section class="membership-cards">
+        <div class="card" id="np-card">
+          <h3>NP Membership</h3>
+          <p>No Fee</p>
+          <a href="#" class="open-modal" data-modal="np-dialog">Learn More</a>
+        </div>
+        <div class="card" id="bronze-card">
+          <h3>Bronze Membership</h3>
+          <p>Basic Tier</p>
+          <a href="#" class="open-modal" data-modal="bronze-dialog">Learn More</a>
+        </div>
+        <div class="card" id="silver-card">
+          <h3>Silver Membership</h3>
+          <p>Middle Tier</p>
+          <a href="#" class="open-modal" data-modal="silver-dialog">Learn More</a>
+        </div>
+        <div class="card" id="gold-card">
+          <h3>Gold Membership</h3>
+          <p>Top Tier</p>
+          <a href="#" class="open-modal" data-modal="gold-dialog">Learn More</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modals -->
+    <dialog id="np-dialog">
+      <button class="close-modal">❌</button>
+      <h2>NP Membership</h2>
+      <p>For non-profit organizations. Includes directory listing.</p>
+    </dialog>
+    <dialog id="bronze-dialog">
+      <button class="close-modal">❌</button>
+      <h2>Bronze Membership</h2>
+      <p>Includes directory listing and 10% event discount.</p>
+    </dialog>
+    <dialog id="silver-dialog">
+      <button class="close-modal">❌</button>
+      <h2>Silver Membership</h2>
+      <p>Includes directory listing, 20% event discount, and homepage spotlight.</p>
+    </dialog>
+    <dialog id="gold-dialog">
+      <button class="close-modal">❌</button>
+      <h2>Gold Membership</h2>
+      <p>Includes directory listing, 30% event discount, homepage spotlight, and exclusive training.</p>
+    </dialog>
+  </main>
+  <footer>
+    <div class="footer-section">
+      <p><strong>Lusaka Chamber of Commerce</strong></p>
+      <p>123 Chamber Avenue</p>
+      <p>Lusaka, Zambia</p>
+    </div>
+    <div class="footer-section social">
+      <a href="http://github.com/ikayz" target="_blank">
+        <img src="images/github.svg" alt="GitHub" width="16" height="16">
+      </a>
+      <a href="https://www.linkedin.com/in/isaac-miti/" target="_blank">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+      </a>
+      <a href="https://www.facebook.com/isaac.ikayz/" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+      </a>
+      <a href="https://x.com/ikayz360" target="_blank">
+        <img src="images/twitter-x.svg" alt="X" width="16" height="16">
+      </a>
+    </div>
+    <div class="footer-section">
+      <p>WDD 231 Class Project</p>
+      <p>Isaac Miti</p>
+      <p>&copy; <span id="current-year"></span> Lusaka Chamber of Commerce</p>
+      <p id="lastModified">Last Modification</p>
+    </div>
+  </footer>
+</body>
+
+</html>

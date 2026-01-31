@@ -51,12 +51,10 @@
 
   .footer-section:first-child {
     text-align: left;
-    margin-left: 1rem;
   }
 
   .footer-section:last-child {
     text-align: right;
-    margin-right: 1rem;
   }
 
   .hero img {
@@ -66,5 +64,25 @@
 
   .info-grid {
     grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .members-container {
+    grid-auto-columns: calc(33.33% - 0.66rem);
+  }
+
+  /* JOIN PAGE GRID */
+  .join-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .membership-cards {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .join-container .join-form {
+    max-width: 100%;
   }
 }
