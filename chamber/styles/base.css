@@ -411,7 +411,7 @@ section .section-heading.full {
   }
 }
 
-.card h3 {
+.card h2 {
   margin-top: 0;
   color: var(--twilight-indigo);
 }
