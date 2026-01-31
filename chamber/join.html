@@ -54,23 +54,23 @@
       <section class="form-area">
         <form method="get" action="thankyou.html" class="join-form">
           <label title="First Name">First Name
-            <input type="text" name="firstName" required autocomplete="given-name">
+            <input type="text" name="firstName" required autocomplete="given-name" title="First Name">
           </label>
           <label title="Last Name">Last Name
-            <input type="text" name="lastName" required autocomplete="family-name">
+            <input type="text" name="lastName" required autocomplete="family-name" title="Last Name">
           </label>
           <label title="Organizational Title">Organizational Title
             <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[a-zA-Z\s-]{7,}"
               title="Must be at least 7 characters (alpha, hyphens, spaces)">
           </label>
           <label title="Email">Email
-            <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
+            <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Email">
           </label>
           <label title="Mobile Phone">Mobile Phone
-            <input type="tel" name="phone" required autocomplete="tel">
+            <input type="tel" name="phone" required autocomplete="tel" title="Mobile Phone">
           </label>
           <label title="Business/Organization Name">Business/Organization Name
-            <input type="text" name="organization" required autocomplete="organization">
+            <input type="text" name="organization" required autocomplete="organization" title="Business/Organization Name">
           </label>
           <label title="Membership Level">Membership Level
             <select name="membershipLevel" required>
@@ -82,7 +82,7 @@
             </select>
           </label>
           <label title="Business/Organization Description">Business/Organization Description
-            <textarea name="description"></textarea>
+            <textarea name="description" title="Business/Organization Description"></textarea>
           </label>
 
           <!-- Timestamp Field -->
