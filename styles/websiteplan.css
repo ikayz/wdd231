@@ -1,0 +1,75 @@
+:root {
+  /* Color Variables */
+  --color-primary: #a3d5ff; /* Soft Baby Blue */
+  --color-secondary: #ffd6e0; /* Pastel Pink */
+  --color-neutral-light: #fdfdfd; /* Off-White */
+  --color-neutral-dark: #333333; /* Charcoal Gray */
+  --color-accent: #ffeba3; /* Warm Cream Yellow */
+
+  /* Typography Variables */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-neutral-light);
+  color: var(--color-neutral-dark);
+  line-height: 1.6;
+  margin: 2rem;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-secondary);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--color-neutral-dark);
+  text-align: center;
+}
+
+.color-swatch {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: #000;
+}
+
+.secondary {
+  background-color: var(--color-secondary);
+  color: #000;
+}
+
+.neutral {
+  background-color: var(--color-neutral-dark);
+  color: #fff;
+}
+
+.accent {
+  background-color: var(--color-accent);
+  color: #000;
+}
+
+.wireframe figure {
+  text-align: center;
+  margin: 20px auto;
+}
