@@ -1,12 +1,10 @@
 :root {
-  /* Color Variables */
-  --color-primary: #a3d5ff; /* Soft Baby Blue */
-  --color-secondary: #ffd6e0; /* Pastel Pink */
-  --color-neutral-light: #fdfdfd; /* Off-White */
-  --color-neutral-dark: #333333; /* Charcoal Gray */
-  --color-accent: #ffeba3; /* Warm Cream Yellow */
+  --color-primary: #2a6fa8; /* Accessible Baby Blue */
+  --color-secondary: #ffd6e0; /* Pastel Pink (background only) */
+  --color-neutral-light: #ffffff; /* White */
+  --color-neutral-dark: #222222; /* Near Black */
+  --color-accent: #f9c74f; /* Golden Yellow (background only) */
 
-  /* Typography Variables */
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Roboto', sans-serif;
 }
@@ -69,7 +67,48 @@ figcaption {
   color: #000;
 }
 
-.wireframe figure {
+.site-header {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-light);
+  padding: 1rem;
   text-align: center;
+}
+
+.site-name {
+  border-left: 5px solid var(--color-primary);
+  padding: 1rem;
+}
+
+.site-purpose {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  color: var(--color-neutral-dark);
+}
+
+.scenarios li {
+  background-color: var(--color-accent);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-neutral-dark);
+}
+
+.color-scheme {
+  border: 2px dashed var(--color-secondary);
+  padding: 1rem;
+}
+
+.typography {
+  background-color: var(--color-neutral-light);
+  padding: 1rem;
+}
+
+.wireframe {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+}
+.wireframe figure {
+  border: 2px solid var(--color-primary);
+  padding: 0.5rem;
   margin: 20px auto;
+  text-align: center;
 }
