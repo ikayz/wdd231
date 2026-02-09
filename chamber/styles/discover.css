@@ -1,0 +1,148 @@
+/* Discover Page Specific Styles */
+
+/* Visitor Message */
+#visitor-message {
+  background-color: var(--color-accent, #f9c74f);
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+/* Grid Container */
+#discover-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  /* Mobile Layout (Small) */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'card1'
+    'card2'
+    'card3'
+    'card4'
+    'card5'
+    'card6'
+    'card7'
+    'card8';
+}
+
+/* Card Styles */
+.discover-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.discover-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.discover-card figure {
+  margin: 0 0 10px 0;
+  overflow: hidden; /* For hover effect */
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+}
+
+.discover-card address {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.discover-card p {
+  margin-bottom: 15px;
+}
+
+.discover-card button {
+  margin-top: auto;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--watermelon, #ee4266);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.discover-card button:hover {
+  background-color: var(--twilight-indigo, #1d2f6f);
+}
+
+/* Assign Grid Areas */
+.discover-card:nth-child(1) {
+  grid-area: card1;
+}
+.discover-card:nth-child(2) {
+  grid-area: card2;
+}
+.discover-card:nth-child(3) {
+  grid-area: card3;
+}
+.discover-card:nth-child(4) {
+  grid-area: card4;
+}
+.discover-card:nth-child(5) {
+  grid-area: card5;
+}
+.discover-card:nth-child(6) {
+  grid-area: card6;
+}
+.discover-card:nth-child(7) {
+  grid-area: card7;
+}
+.discover-card:nth-child(8) {
+  grid-area: card8;
+}
+
+/* Medium Screens */
+@media (min-width: 641px) {
+  #discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'card1 card2'
+      'card3 card4'
+      'card5 card6'
+      'card7 card8';
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  #discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'card1 card2 card3'
+      'card4 card5 card6'
+      'card7 card8 card8'; /* Spanning card 8 for variety */
+  }
+
+  /* Hover Effect (Desktop Only) */
+  .discover-card img {
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .discover-card:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
