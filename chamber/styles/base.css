@@ -4,6 +4,11 @@
   --watermelon: #ee4266ff;
   --hunter-green: #3e5641ff;
   --muted-teal: #83bca9ff;
+  --golden-yellow: #f9c74f;
+  --neutral-light: #eeeeee;
+  --neutral-white: #ffffff;
+  --neutral-dark: #333333;
+  --neutral-border: #dddddd;
   --headings-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
 }
@@ -19,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--neutral-border);
   position: relative;
 }
 
@@ -139,7 +144,7 @@ main {
 
 /* FOOTER */
 footer {
-  background-color: #eee;
+  background-color: var(--neutral-light);
   padding: 1rem 10px;
   text-align: center;
 }
@@ -162,7 +167,7 @@ footer {
   align-items: center;
   width: 44px;
   height: 44px;
-  border: #ccc solid 1px;
+  border: var(--neutral-border) solid 1px;
   border-radius: 22px;
   background-color: var(--twilight-indigo);
 }
@@ -197,7 +202,7 @@ section .section-heading.full {
 }
 
 .section-body {
-  background: #e9e9e9;
+  background: var(--neutral-light);
   padding: 1rem;
   min-height: 180px;
 }
@@ -219,7 +224,7 @@ section .section-heading.full {
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--neutral-border);
 }
 
 .forecast-day:last-child {
@@ -235,8 +240,8 @@ section .section-heading.full {
 }
 
 .member-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--neutral-white);
+  border: 1px solid var(--neutral-border);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
@@ -249,7 +254,7 @@ section .section-heading.full {
 
 .tagline {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--neutral-dark);
   margin: 0 0 1rem 0;
 }
 
@@ -283,7 +288,7 @@ section .section-heading.full {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--neutral-white);
   border: 1px solid var(--twilight-indigo);
   color: var(--twilight-indigo);
 }
@@ -329,7 +334,7 @@ section .section-heading.full {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #fff;
+  background-color: var(--neutral-white);
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -348,7 +353,7 @@ section .section-heading.full {
   width: 100%;
   padding: 0.8rem;
   margin-top: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--neutral-border);
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -377,8 +382,8 @@ section .section-heading.full {
 }
 
 .card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--neutral-white);
+  border: 1px solid var(--neutral-border);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
