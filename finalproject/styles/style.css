@@ -1,0 +1,521 @@
+:root {
+  /* Color Palette */
+  --color-primary: #2a6fa8;
+  --color-secondary: #ffd6e0;
+  --color-neutral-dark: #222222;
+  --color-neutral-light: #ffffff;
+  --color-accent: #f9c74f;
+
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-neutral-dark);
+  background-color: var(--color-neutral-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Accessibility: Skip Link */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  background-color: var(--color-accent);
+  color: var(--color-neutral-dark);
+  padding: 1rem;
+  z-index: 1000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header & Nav */
+header {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem; /* Add space below header for subpages */
+}
+
+.home-page header {
+  margin-bottom: 0; /* Remove space on home page so hero touches header */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  font-weight: 700;
+  padding: 0.5rem 0.5rem 1rem;
+}
+
+nav a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 8px;
+}
+
+nav a:hover:not(.cta-nav) {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 8px;
+}
+
+header h1 {
+  margin: 0; /* Remove default browser margins */
+  line-height: 1; /* Prevent extra vertical space */
+}
+
+header h1 img {
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Buttons & CTAs */
+.cta,
+.cta-nav,
+button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-neutral-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-nav {
+  padding: 0.5rem 1rem;
+}
+
+.cta:hover,
+.cta-nav:hover,
+button:hover {
+  background-color: #1a4f7a; /* Darker shade of primary */
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f4f9fc 0%, var(--color-secondary) 100%);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+#hero.home-hero {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url('../images/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#hero .cta {
+  margin-top: 1rem;
+}
+
+/* Essentials Section */
+.essentials-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-neutral-light);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tip of the Week */
+#tip-of-week {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 5px solid var(--color-accent); /* Callout accent */
+}
+
+.tip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.tip-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Modal Styles */
+dialog {
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-modal:hover {
+  color: #000;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-neutral-light);
+  padding: 3rem 1rem;
+}
+
+.footer-col h3 {
+  color: var(--color-neutral-light);
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col a {
+  color: var(--color-neutral-light);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: var(--color-neutral-dark);
+  color: var(--color-neutral-light);
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: var(--color-neutral-light);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icons img {
+  height: 24px;
+  width: 24px;
+  /* Invert color to match light text on dark background */
+  filter: brightness(0) invert(1);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.social-icons a:hover img {
+  opacity: 0.8;
+}
+
+/* Progress Bar for Checklist */
+.progress-section {
+  margin-bottom: 0;
+}
+
+.progress-section h4 {
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress-bar-fill {
+  height: 25px;
+  width: 0%; /* Controlled by JS */
+  background-color: var(--color-accent);
+  transition: width 0.4s ease-in-out;
+}
+
+.progress-text {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+/* Dynamic Feature Styles */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.bag-category {
+  background-color: var(--color-neutral-light);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Checklist Page Specifics */
+#checklist-app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#checklist-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#checklist-list {
+  list-style: none;
+  padding: 0;
+}
+
+#categories {
+  margin-top: 3rem;
+}
+
+#categories h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#categories ul {
+  padding-left: 1.5rem;
+}
+
+/* Hospital Bag Planner Specifics */
+.planner-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.bag-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bag-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.bag-item .checklist-item {
+  flex-grow: 1;
+  margin-bottom: 0; /* Override default */
+}
+
+.note-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  background-color: #eee;
+  color: var(--color-neutral-dark);
+  border: 1px solid #ddd;
+}
+
+.note-btn:hover {
+  background-color: #ddd;
+}
+
+/* Contact Page Specifics */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .essentials-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .tip-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .planner-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-bottom p {
+    flex: 1;
+  }
+
+  .footer-bottom p:nth-child(1) {
+    order: 2;
+    text-align: center;
+  }
+
+  .footer-bottom p:nth-child(2) {
+    order: 3;
+    text-align: right;
+  }
+
+  .footer-bottom p:nth-child(3) {
+    order: 1;
+    text-align: left;
+  }
+}

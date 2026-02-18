@@ -1,0 +1,25 @@
+{
+  "mom": [
+    "Photo ID and Insurance Card",
+    "Birth Plan (copies)",
+    "Comfortable robe and pajamas",
+    "Slippers and socks",
+    "Nursing bras and pads",
+    "Toiletries (toothbrush, shampoo, etc.)",
+    "Going-home outfit (loose fitting)",
+    "Phone and extra-long charger"
+  ],
+  "baby": [
+    "Installed Car Seat",
+    "Going-home outfit",
+    "Receiving blanket",
+    "Hat and socks",
+    "Pediatrician contact info"
+  ],
+  "partner": [
+    "Snacks and drinks",
+    "Change of clothes",
+    "Toiletries",
+    "Pillow and blanket"
+  ]
+}

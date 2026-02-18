@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Safe Sleep Basics",
+    "summary": "Always place your baby on their back to sleep, for naps and at night.",
+    "details": "Use a firm sleep surface covered by a fitted sheet. Keep soft bedding, crib bumpers, and toys out of the crib to reduce the risk of SIDS. Room sharing is recommended for the first 6 months.",
+    "image": "images/sleeping-baby.jpg"
+  },
+  {
+    "id": 2,
+    "title": "The Power of Skin-to-Skin",
+    "summary": "Holding your baby skin-to-skin helps regulate their body temperature and heart rate.",
+    "details": "Skin-to-skin contact, also known as Kangaroo Care, boosts oxytocin levels in both parent and baby, promoting bonding and reducing stress. It's beneficial for both moms and dads to practice.",
+    "image": "images/sleeping-baby.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Feeding on Demand",
+    "summary": "Watch your baby, not the clock. Feed them whenever they show hunger cues.",
+    "details": "Early hunger cues include smacking lips, sucking on hands, and rooting. Crying is a late sign of hunger. Feeding on demand helps establish a good milk supply for breastfeeding moms and ensures baby gets enough to eat.",
+    "image": "images/sleeping-baby.jpg"
+  }
+]

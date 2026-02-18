@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "author": "Sarah M., Mom of 2",
+    "text": "Sleep when the baby sleeps. It sounds cliché, but it's the only way you'll get any rest. The laundry can wait!"
+  },
+  {
+    "id": 2,
+    "author": "David K., Dad of 1",
+    "text": "Accept any and all offers of help. If someone wants to bring you a meal or watch the baby while you shower, say yes!"
+  },
+  {
+    "id": 3,
+    "author": "Jessica R., Mom of 1",
+    "text": "Trust your instincts. You'll get a ton of advice, but at the end of the day, you know your baby best."
+  },
+  {
+    "id": 4,
+    "author": "Alex P., Parent of 3",
+    "text": "Take shifts with your partner for night feedings if you can. Even a few hours of uninterrupted sleep makes a huge difference."
+  },
+  {
+    "id": 5,
+    "author": "Maria G., Mom of 1",
+    "text": "Batch cook and freeze meals before the baby arrives. You'll be so grateful to have them on exhausting days."
+  },
+  {
+    "id": 6,
+    "author": "Ben S., Dad of 2",
+    "text": "A white noise machine is a lifesaver. It helps drown out household noises and can soothe the baby to sleep."
+  },
+  {
+    "id": 7,
+    "author": "Chloe T., Mom of 1",
+    "text": "It's okay to say 'no' to visitors if you're not feeling up to it. Protect your peace and your recovery time."
+  },
+  {
+    "id": 8,
+    "author": "Liam J., Dad of 1",
+    "text": "Learn the '5 S's' for soothing a fussy baby: Swaddle, Side/Stomach position, Shush, Swing, and Suck. It works wonders."
+  },
+  {
+    "id": 9,
+    "author": "Emily R., Mom of 3",
+    "text": "Don't compare your baby's milestones to others. Every child develops at their own unique pace."
+  },
+  {
+    "id": 10,
+    "author": "Noah B., Parent of 1",
+    "text": "Keep snacks and a large water bottle wherever you typically feed the baby. You'll get hungry and thirsty at odd times."
+  },
+  {
+    "id": 11,
+    "author": "Olivia C., Mom of 2",
+    "text": "Take a short walk outside every day, even if it's just for 10 minutes. The fresh air is good for both you and the baby."
+  },
+  {
+    "id": 12,
+    "author": "James W., Dad of 1",
+    "text": "Baby-wearing is a game-changer. It frees up your hands and keeps the baby calm and close."
+  },
+  {
+    "id": 13,
+    "author": "Sophia L., Mom of 1",
+    "text": "Postpartum recovery is a marathon, not a sprint. Be kind and patient with your body."
+  },
+  {
+    "id": 14,
+    "author": "Michael K., Dad of 3",
+    "text": "Let your partner have their own way of doing things. As long as the baby is safe, it's okay if it's not 'your' way."
+  },
+  {
+    "id": 15,
+    "author": "Isabella M., Mom of 1",
+    "text": "It's okay to feel overwhelmed and to cry. The hormone shifts are intense. Talk about it with someone you trust."
+  },
+  {
+    "id": 16,
+    "author": "Ethan H., Dad of 2",
+    "text": "Set up a diaper changing station on each floor of your house if you can. It saves a lot of running up and down."
+  },
+  {
+    "id": 17,
+    "author": "Ava N., Mom of 1",
+    "text": "You don't need all the expensive gadgets. Babies need very little: love, food, and a safe place to sleep."
+  },
+  {
+    "id": 18,
+    "author": "William D., Dad of 1",
+    "text": "Sing to your baby. They love the sound of your voice, no matter how you think you sound."
+  },
+  {
+    "id": 19,
+    "author": "Mia P., Mom of 2",
+    "text": "Master the art of the one-handed snack. You'll be a pro in no time."
+  },
+  {
+    "id": 20,
+    "author": "Alexander G., Dad of 1",
+    "text": "When in doubt, a car ride or a walk in the stroller can often soothe a fussy baby to sleep."
+  },
+  {
+    "id": 21,
+    "author": "Charlotte Q., Mom of 1",
+    "text": "Don't stress about 'bouncing back'. Your body did something incredible. Give it time and grace."
+  },
+  {
+    "id": 22,
+    "author": "Daniel F., Dad of 2",
+    "text": "Take lots of videos, not just photos. You'll love hearing their little sounds and seeing them move."
+  },
+  {
+    "id": 23,
+    "author": "Amelia V., Mom of 1",
+    "text": "A simple 'I love you' and a hug for your partner can go a long way on a tough day. You're a team."
+  },
+  {
+    "id": 24,
+    "author": "Henry Z., Dad of 1",
+    "text": "Celebrate the small victories, like taking a shower or drinking a hot cup of coffee."
+  },
+  {
+    "id": 25,
+    "author": "Evelyn Y., Mom of 2",
+    "text": "Trust that you are the best parent for your baby. You've got this."
+  },
+  {
+    "id": 26,
+    "author": "Jacob X., Dad of 1",
+    "text": "Keep the lights dim and interactions minimal during nighttime changes to help the baby learn day from night."
+  },
+  {
+    "id": 27,
+    "author": "Harper A., Mom of 1",
+    "text": "You can't pour from an empty cup. Make sure you're taking care of your own basic needs too."
+  },
+  {
+    "id": 28,
+    "author": "Matthew B., Dad of 3",
+    "text": "Keep a log of feedings and diaper changes in the first few weeks. It's a blur, and it helps with doctor visits."
+  },
+  {
+    "id": 29,
+    "author": "Abigail C., Mom of 1",
+    "text": "It's okay if your house is a mess. A happy, rested family is more important than a spotless home."
+  },
+  {
+    "id": 30,
+    "author": "Joseph D., Dad of 1",
+    "text": "Find a good pediatrician that you trust and feel comfortable asking 'silly' questions to. There are no silly questions."
+  },
+  {
+    "id": 31,
+    "author": "Ella E., Mom of 2",
+    "text": "The days are long but the years are short. Try to cherish the cuddles, even when you're exhausted."
+  },
+  {
+    "id": 32,
+    "author": "David S., Dad of 1",
+    "text": "Don't be afraid to leave the baby with a trusted person for an hour to get a break. It's healthy for you."
+  },
+  {
+    "id": 33,
+    "author": "Grace T., Mom of 1",
+    "text": "A comfortable chair for feeding will be one of the best investments you make."
+  },
+  {
+    "id": 34,
+    "author": "Samuel U., Dad of 2",
+    "text": "Talk to your baby constantly. Narrate your day. It's fantastic for their language development."
+  },
+  {
+    "id": 35,
+    "author": "Victoria V., Mom of 1",
+    "text": "If you're struggling with breastfeeding, a lactation consultant can be an invaluable resource. Don't suffer in silence."
+  },
+  {
+    "id": 36,
+    "author": "Chris W., Parent of 1",
+    "text": "It's okay to just sit and hold your sleeping baby. The chores can wait."
+  },
+  {
+    "id": 37,
+    "author": "Lily X., Mom of 1",
+    "text": "Have a 'go bag' for the baby with diapers, wipes, and a change of clothes ready at all times. It makes leaving the house less daunting."
+  },
+  {
+    "id": 38,
+    "author": "Andrew Y., Dad of 2",
+    "text": "Your baby doesn't need silence to sleep. Running the vacuum or dishwasher is fine and helps them get used to normal sounds."
+  },
+  {
+    "id": 39,
+    "author": "Zoe Z., Mom of 1",
+    "text": "Find a show to binge-watch during late-night feeding sessions. It makes the time pass more quickly."
+  },
+  {
+    "id": 40,
+    "author": "Ryan A., Dad of 1",
+    "text": "Remember that 'this too shall pass.' The tough phases don't last forever, even though it feels like they will."
+  }
+]
