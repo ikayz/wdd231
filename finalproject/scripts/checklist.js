@@ -35,20 +35,13 @@ export function initChecklist(container) {
       label.textContent = item.text;
       label.setAttribute('for', `item-${index}`);
       if (item.completed) {
-        label.style.textDecoration = 'line-through';
-        label.style.color = '#888';
+        label.classList.add('completed');
       }
 
       const removeBtn = document.createElement('button');
       removeBtn.textContent = '×';
       removeBtn.className = 'remove-btn';
       removeBtn.setAttribute('aria-label', 'Remove item');
-      removeBtn.style.marginLeft = 'auto'; // Push to right
-      removeBtn.style.background = 'none';
-      removeBtn.style.border = 'none';
-      removeBtn.style.color = '#d9534f';
-      removeBtn.style.fontSize = '1.2rem';
-      removeBtn.style.cursor = 'pointer';
       removeBtn.addEventListener('click', () => removeItem(index));
 
       li.append(checkbox, label, removeBtn);

@@ -316,7 +316,7 @@ footer {
   margin-bottom: 0;
 }
 
-.progress-section h4 {
+.progress-section h3 {
   margin-bottom: 0.75rem;
   text-align: center;
   font-size: 1.2rem;
@@ -350,6 +350,11 @@ footer {
   gap: 0.75rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
+}
+
+.checklist-item label.completed {
+  text-decoration: line-through;
+  color: #888;
 }
 
 .bag-category {
@@ -395,6 +400,19 @@ footer {
 
 #categories ul {
   padding-left: 1.5rem;
+}
+
+.progress-card {
+  margin-bottom: 2rem;
+}
+
+.remove-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #d9534f;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* Hospital Bag Planner Specifics */
@@ -451,6 +469,21 @@ footer {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: inherit;
+}
+
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.input-error {
+  border-color: #d9534f;
 }
 
 /* Responsive Design */
@@ -518,4 +551,9 @@ footer {
     order: 1;
     text-align: left;
   }
+}
+
+.author {
+  margin-top: 0.5rem;
+  font-style: italic;
 }

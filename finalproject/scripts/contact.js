@@ -33,12 +33,9 @@ export function initContactForm(form) {
   function showError(input, message) {
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message';
-    errorDiv.style.color = '#d9534f';
-    errorDiv.style.fontSize = '0.875rem';
-    errorDiv.style.marginTop = '0.25rem';
     errorDiv.textContent = message;
 
-    input.style.borderColor = '#d9534f';
+    input.classList.add('input-error');
     input.parentElement.appendChild(errorDiv);
   }
 
@@ -47,7 +44,7 @@ export function initContactForm(form) {
     errors.forEach(error => error.remove());
 
     const inputs = form.querySelectorAll('input, textarea');
-    inputs.forEach(input => (input.style.borderColor = ''));
+    inputs.forEach(input => input.classList.remove('input-error'));
   }
 
   function isValidEmail(email) {

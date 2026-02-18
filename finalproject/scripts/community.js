@@ -15,7 +15,7 @@ export async function initCommunityAdvice(container) {
       card.className = 'advice-card card';
       card.innerHTML = `
         <blockquote>"${tip.text}"</blockquote>
-        <p class="author" style="margin-top: 0.5rem; font-style: italic;">— ${tip.author}</p>
+        <p class="author">— ${tip.author}</p>
       `;
       container.appendChild(card);
     });
